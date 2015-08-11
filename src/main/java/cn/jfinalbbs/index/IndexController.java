@@ -194,7 +194,7 @@ public class IndexController extends BaseController {
      * @throws IOException
      */
     public void weblogin() {
-        redirect("http://www.cxzc.com:8080/rest/login?retUrl=http%3A%2F%2Fbbs.cxzc.com%3A8088%2Fwebsitecallback");
+        redirect("http://121.43.73.218:8080/chouxin-web/user/loginFromBBS.html");
     }
 
 

@@ -94,7 +94,7 @@ LOCK TABLES `link` WRITE;
 
 INSERT INTO `link` (`id`, `name`, `url`, `display_index`)
 VALUES
-	(1,'想筹就筹','http://jfbbs.tomoya.cn/',1);
+	(1,'创梦部落','http://jfbbs.tomoya.cn/',1);
 
 /*!40000 ALTER TABLE `link` ENABLE KEYS */;
 UNLOCK TABLES;
