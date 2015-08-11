@@ -265,6 +265,8 @@
             var _this = this;
             var classPrefix = this.classPrefix = editormd.classPrefix;
             var settings = this.settings = $.extend(true, editormd.defaults, options);
+            //todo
+            settings.path = "/bbs" + settings.path;
             id = (typeof id === "object") ? settings.id : id;
             var editor = this.editor = $("#" + id);
             this.id = id;
