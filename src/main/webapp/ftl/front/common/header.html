@@ -35,7 +35,7 @@
                 }
             </script>
             <ul class="nav navbar-nav navbar-right">
-                <li <#if page_tab == 'api'> class="active" </#if>><a href="${baseUrl!}/api">Api</a></li>
+                <li <#if page_tab == 'api'> class="active" </#if>><a href="${baseUrl!}/api" style="display: none">Api</a></li>
                 <#if session.user??>
                     <li <#if page_tab == 'message'> class="active" </#if>><a href="${baseUrl!}/user/message/${session.user.id!}">未读消息 <span class="badge" id="badge"></span></a></li>
                     <li class="dropdown">
