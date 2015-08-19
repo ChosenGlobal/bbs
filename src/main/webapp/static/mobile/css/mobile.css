@@ -8,45 +8,46 @@ body {
     src: url('../../bootstrap/fonts/glyphicons-halflings-regular.eot');
     src: url('../../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
 }
+a{
+    color: #222;
+}
+.white{
+    color: #fff;
+}
 a:link, a:visited, a:active {
-    color: #778087;
     text-decoration: none;
     word-break: break-all;
 }
 a:hover {
-    color: #4d5256;
+    color: #fd9025;
     text-decoration: underline;
 }
 #Top {
     text-align: center;
-    background-color: #fff;
-    height: 44px;
+    background-color: #fd9025;
+    height: 60px;
     font-size: 15px;
     font-weight: 500;
     background-size: 44px 44px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.22);
-    margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 /* panel */
 .panel {
     margin: 2px;
     background-color: #fff;
-    border: 1px solid transparent;
-    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-    box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .panel-default{
-    border-color: #ddd;
+
 }
 .panel-default>.panel-heading {
     color: #333;
-    background-color: #f5f5f5;
-    border-color: #ddd;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
 }
 .panel-heading {
-    padding: 8px 5px;
-    border-bottom: 1px solid transparent;
+    height: 50px;
+    line-height: 50px;
 }
 .panel-body {
     padding: 5px;
@@ -102,8 +103,7 @@ td, th {
 .label {
     display: inline;
     padding: .2em .6em .3em;
-    font-size: 75%;
-    font-weight: 700;
+    font-size: 16px;
     line-height: 1;
     color: #555;
     text-align: center;
@@ -112,15 +112,18 @@ td, th {
 }
 .label-success {
     color: #fff;
-    background-color: #5cb85c;
+    padding:0px 10px 14px 10px;
+    border-bottom: 2px solid #fd9025;
 }
 .label-default {
     color: #fff;
     background-color: #777;
 }
 .label-info {
-    color: #fff;
-    background-color: #5bc0de;
+    color: #ccc;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -4px;
 }
 /* pager */
 .pager {
@@ -206,4 +209,22 @@ td, th {
 }
 .sep {
     border-top: 1px #E5E5E5 solid;
+}
+.onepage{
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid #fd9025;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.endpage{
+    width: 60px;
+    height: 36px;
+    background: #fd9025;
+    line-height: 36px;
+    border: 1px solid #fd9025;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
 }

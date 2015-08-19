@@ -1,26 +1,30 @@
 <#macro paginate currentPage totalPage actionUrl urlParas="">
-<table cellpadding="0" cellspacing="0" border="0" width="100%">
+<table cellpadding="0" cellspacing="0" border="0" width="100%" style="height: 115px;">
     <tbody>
     <tr>
-        <td width="120" align="left" style="padding: 5px;">
+        <!--<td width="120" align="left" style="padding: 5px;">-->
+
+        <!--</td>-->
+        <td colspan="3" width="auto" align="center">
             <#if currentPage == 1>
-                <a href="" class="btn btn-default btn-xs disabled">&lt;上一页</a>
-            <#else>
-                <a href="${actionUrl}?p=${currentPage-1}${urlParas}" class="btn btn-default btn-xs">&lt;上一页</a>
+                <a href="" class="btn btn-default btn-xs disabled onepage">上一页</a>
+                <#else>
+                    <a href="${actionUrl}?p=${currentPage-1}${urlParas}" class="btn btn-default btn-xs onepage">上一页</a>
             </#if>
-        </td>
-        <td width="auto" align="center">
-            <strong class="fade">
+
+            <strong class="fade" style="font-size: 16px; margin: 0 10px;">
             ${currentPage}/${totalPage}
             </strong>
-        </td>
-        <td width="120" align="right" style="padding: 5px;">
+
             <#if currentPage == totalPage>
-                <a href="" class="btn btn-default btn-xs disabled">下一页&gt;</a>
-            <#else>
-                <a href="${actionUrl}?p=${currentPage+1}${urlParas}" class="btn btn-default btn-xs">下一页&gt;</a>
+                <a href="" class="btn btn-default btn-xs disabled endpage">下一页</a>
+                <#else>
+                    <a href="${actionUrl}?p=${currentPage+1}${urlParas}" class="btn btn-default btn-xs endpage">下一页</a>
             </#if>
         </td>
+        <!--<td width="120" align="right" style="padding: 5px;">-->
+
+        <!--</td>-->
     </tr>
     </tbody>
 </table>
